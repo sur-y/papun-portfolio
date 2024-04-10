@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            background-image: url("public/image/girl-background.jpg");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            background-attachment: fixed;
+            background-color: rgba(149,187,192,255);
+            height: 100vh;
+        }
+        header nav{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(110,154,167,0.5);
+            font-size: 20px;
+            font-family: arial;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 20px;
+        }
+        nav span{
+            margin-right: 25px;
+        }
+        main{
+            height: 650px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            font-family: arial;
+            color: white;
+            margin-left: 100px;
+        }
+        .sub-title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .title{
+            font-size: 40px;
+            font-weight: bold;
+            width: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .text{
+            width: 500px;
+            line-height: 40px;
+        }
+        button{
+            height: 40px;
+            font-size: 20px;
+        }
+        .btn-1{
+            background-color: darkcyan;
+            color: white;
+            border: none;
+        }
+        section{
+            background-color: white;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        article{
+            font-family: arial;
+            height: 1200px;
+            display: flex;
+            align-items: center;
+            
+        }
+        .section-title{
+            font-size: 25px;
+            font-weight: bold;
+            color: darkcyan;
+            margin-bottom: 20px;
+            margin-top: -400px;
+        }
+        .section-text{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .card{
+            margin-top: 50px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        .bi-pc-display-horizontal{
+            font-size: 100px;
+        }
+        .bi-bookmark-heart-fill{
+            font-size: 100px;
+        }
+        .bi-person-fill-up{
+            font-size: 100px;
+        }
+        .card-title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .card-text{
+            line-height: 25px;
+        }
+        .card:hover{
+            background-color: darkcyan;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <span>Home</span>
+                <span>All Courses</span>
+                <span>About</span>
+                <span>Team</span>
+                <span>Pricing</span>
+                <span>Journal</span>
+                <span>Contact</span>
+            </div>
+            <div>
+                <span>GET CERTIFICATE</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="sub-title">WELCOME TO ACADEMIA</div>
+            <div class="title">Best Online Education Expertise</div>
+            <div class="text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                there live the blind texts. </div>
+                <button class="btn-1">Get Started Now <span class="bi bi-arrow-right"></span></button>
+                <button class="btn-2">View Course <span class="bi bi-arrow-right"></span></button>
+        </div>
+    </main>
+    <section>
+        <div>
+            <img src="public/image/girl-foreground.jpg">
+        </div>
+        <div>
+            <article>
+                <div>
+                    <div class="section-title">LEARN ANYTHING</div>
+                    <div class="section-text">Benifits About Online Learning Experties</div>
+                    <div class="card">
+                        <div><span class="bi bi-pc-display-horizontal"></span></div>
+                        <div>
+                        <div class="card-title">Online Courses</div>
+                        <div class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="card">
+                        <div><span class="bi bi-bookmark-heart-fill"></span></div>
+                        <div>
+                        <div class="card-title">Earn A Certificates</div>
+                        <div class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+                        </div>
+                    </div>
+                   
+                  
+                    <div class="card">
+                        <div><span class="bi bi-person-fill-up"></span></div>
+                        <div>
+                        <div class="card-title">Learn With Experts</div>
+                        <div class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

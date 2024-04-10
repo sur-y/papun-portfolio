@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            Suryakanta <span>panda</span>
+        </a>
+        <span class="bi bi-list" id="menu-icon"></span>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="../public/images/my.jpg"  id="mypic" alt="">
+        </div>
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>It's<span>Surya</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+            <p> 
+                I am Suryakanta panda an aspiring Web UI Full
+                Stack Learning fresher who is trying to seek a role
+                to enhance and explore my technical knowledge in
+                your company.
+            </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    
+                </div>
+                <button class="btn btn-success">Hire Me</button>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p> 
+                I am Suryakanta panda an aspiring Web UI Full
+                Stack Learning fresher who is trying to seek a role
+                to enhance and explore my technical knowledge in
+                your company.
+            </p>
+                <button class="btn btn-success">Read More</a>
+        </div>
+        <div class="about-img">
+            <img src="../public/images/my.jpg" alt="">
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">projects</h2>
+        <div class="projects-container">
+            <div class="card">
+                <div class="card-header">Video-Tutorial-Library using HTML,Css,Bootstrap,JavaScript,Jquery,Ajax,MongoDB,NodeJS</div>
+                <div class="card-body"><img src="../public/images/video-tutorial.jpg" width="100%"></div>
+                <div class="card-footer">Project-Link:<span><a href="https://videolibrary-project.web.app/">https://videolibrary-project.web.app/</a></span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">Fakestore-API Using HTML,Css,Bootstrap,Javascript </div>
+                <div class="card-body"><img src="../public/images/fakestores.jpeg" width="100%"></div>
+                <div class="card-footer">Project-Link:<span><a href="public/fakestores.html">Fakestore-API</a></span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">EMI Calculator Using HTML,Css,Bootstrap,Javascript</div>
+                <div class="card-body"><img src="../public/images/emis.jpeg" width="100%"></div>
+                <div class="card-footer">Project-Link:<span><a href="public/emi.html">EMI-Calculator</a></span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">KFC-online order using HTML,Css,Bootstrap,JavaScript</div>
+                <div class="card-body"><img src="../public/images/kfcs.jpeg" width="100%"></div>
+                <div class="card-footer">Project-Link:<span><a href="public/kfconline order.html">KFC-Online order</a></span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">shopper-Template using HTML,Css,Bootstrap</div>
+                <div class="card-body"><img src="../public/images/shoppers.jpeg" width="100%"></div>
+                <div class="card-footer">Project-Link:<span><a href="public/soppertemplatecom.html">Shopper-Template</a></span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">Colorlib-Design using HTML,Css,Bootstrap</div>
+                <div class="card-body"><img src="../public/images/colorlibs.jpg" width="100%"></div>
+                <div class="card-footer">Project-Link:<span><a href="public/colorlibwebsite.html">Colorlib-Website</a></span></div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contacts">
+        <h2 class="heading">Contact<span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone number">
+                <input type="email" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="btn btn-success">Send Message</button>
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            surya|All Rights Reserved
+        </p>
+    </footer>
+    <script src="../src/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+            background-color: gainsboro;
+            padding: 10px;
+        }
+        .state select{
+            margin-right: 20px;
+            border: none;
+            margin-bottom: 5px;
+            background-color: gainsboro;
+            font-weight: bold;
+            font-family: arial;
+        }
+        .us{
+            border-radius: 12px;
+        }
+        .ship span{
+            margin-right: 20px;
+            font-weight: bold;
+            font-family: arial;
+        }
+        .icon span{
+            margin-right: 15px;
+            color: gray;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            background-color:white;
+            padding: 15px;
+        }
+        .brand-title{
+            font-size: 30px;
+            font-family: arial;
+            font-weight: bold;
+        }
+        .home span{
+            font-family: arial;
+            font-weight: bold;
+            margin-right: 20px;
+           
+        }
+        .nav-icons span{
+            margin-right: 20px;
+        }
+        article{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            padding: 15px;
+            margin-top: 5px;
+
+        }
+        article span{
+            color: gold;
+        }
+       main{
+        display: flex;
+        margin-top: 10px;
+       }
+       .center{
+        position: absolute;
+       top: 50%;
+       left: 50%;
+        color: white;
+       font-size: 30px;
+       font-family: arial;
+       font-weight: bold;
+       }
+       .left{
+        position: absolute;
+       top: 50%;
+       left: 13%;
+        color: white;
+       font-size: 30px;
+       font-family: arial;
+       font-weight: bold;
+       }
+       .right{
+        position: absolute;
+       top: 50%;
+       left: 85%;
+        color: white;
+       font-size: 30px;
+       font-family: arial;
+       font-weight: bold;
+       }
+       .lefts{
+        position: absolute;
+        top: 80%;
+        left: 13%;
+        background-color: white;
+        padding: 12px;
+        border-radius: 3px;
+       }
+       .centers{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        background-color: white;
+        padding: 12px;
+        border-radius: 3px;
+       }
+       .rights{
+        position: absolute;
+        top: 80%;
+        left: 85%;
+        background-color: white;
+        padding: 12px;
+        border-radius: 3px;
+       }
+       section{
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+       }
+      .card{
+        display: flex;
+       
+      }
+      .bi-truck,.bi-bag,.bi-tag,.bi-arrow-repeat{
+        color: orange;
+      }
+      .card-title{
+        font-family: arial;
+        font-weight: bold;
+        margin-left: 15px;
+      }
+      .card-subtitle{
+        color: gray;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-bottom: 1px solid gray;
+      }
+      .title{
+        color: gray;
+        margin-left: 650px;
+        margin-top: 200px;
+      }
+      .sub-title{
+        font-size: 30px;
+        font-family: arial;
+        font-weight: bold;
+        margin-left: 610px;
+        margin-bottom: 30px;
+      }
+      .container{
+        height: 4000px;
+        margin-top: 60px;
+      }
+      .text{
+        margin-left: 410px;
+        margin-top: 50px;
+        color: gray;
+      }
+      .img-banner{
+        margin-left: 200px;
+        margin-top: 50px;
+        display: flex;
+       
+      }
+      .print-banner{
+        background-color: gainsboro;
+        height:400px;
+        width: 400px;
+      }
+     #print:hover{
+        transform: translatex(-3px);
+        width: 303px;
+        transition: 50ms;
+     }
+     #bag:hover{
+        transform: translatex(-3px);
+        width: 303px;
+        transition: 1s;
+     }
+     img{
+            transform: translatex(0px);
+        }
+    .banner-img{
+         margin-left: 200px;
+        margin-top: 30px;
+        display: flex;
+        
+     }
+     .bag{
+        margin-left: 330px;
+        margin-right: 10px;
+     }
+     .title-2{
+       margin-top: 80px;
+     }
+     .sub-title-2{
+        font-family: arial;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 600px;
+     }
+     .text-2{
+        margin-left: 660px;
+        margin-top: 20px;
+     }
+     .text-2 span{
+        margin-right: 25px;
+     }
+     .text-2 span:hover{
+        color: orange;
+        border-bottom: 1px solid orange;
+     }
+     .images{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+     }
+     .img-title{
+        color: gray;
+
+     }
+     .img-text{
+        color: gray;
+     }
+     .discover span{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+     }
+     .topic{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        font-family: arial;
+     }
+     .topic-text{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: arial;
+     }
+     .card-header{
+        display: flex;
+        margin-left: 20px;
+        margin-top: 20px;
+     }
+     .cards{
+        width: 300px;
+        height: 300px;
+        border: 1px solid silver;
+        margin: 30px;
+     }
+   .card-body,.card-footer{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: arial;
+   }
+   .header-text{
+    margin-left: 15px;
+    line-height: 25px;
+   }
+   .bi-star-fill{
+    color: silver;
+   }
+   #star{
+    color: goldenrod;
+   }
+   .card-container{
+    display: flex;
+    margin-left: 230px;
+    margin-top: 70px;
+   }
+   .shopper{
+    background-color: whitesmoke;
+    height: 700px;
+    width: 100vw;
+    margin-top: 100px;
+   
+   }
+   .shopper-heading{
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    
+   }
+   .shopper-text{
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+   }
+   .shopper-img{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 35px;
+    display: flex;
+  justify-content: space-evenly;
+   }
+   .shopper-footer{
+    height: 600px;
+    width: 100vw;
+    background-color: black;
+   }
+   .email{
+        padding: 20px;
+        background-color: rgb(60, 56, 56);
+        color: gray;
+        width: 400px;
+        display: inline-block;
+        margin-top: 1px;
+        margin-left: 500px;
+        margin-bottom: 10px;
+     }
+     .foter-title{
+        color: white;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 600px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        height: 20%;
+     }
+     .button{
+        background-color: gray;
+        padding: 20px;
+        color: white;
+        margin-left: 10px;
+        display: inline-block;
+        width: 100px;
+        font-size: 17px;
+    }
+    .footer{
+            color: rgb(83, 80, 80);
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            padding: 20px;
+            font-family: arial;
+            justify-content: space-between;
+    }
+    ol{
+            list-style: none;
+        }
+        li{
+            margin-bottom: 20px;
+        }
+        li:first-child{
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 25px;
+        color: white;
+        }
+        .name{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: white;
+        }
+        #truck{
+            color: black;
+            font-family: arial;
+            font-size: 14px;
+        }
+        .kids{
+           width: 150px;
+           height: 200px;
+            background-image: url("public/image/shp9.jpg.png");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            overflow: hidden;
+        }
+        .btn span{
+            font-size: 15px;
+            margin-right: 10px;
+            background-color: white;
+            padding: 8px;
+            border-radius: 30px;
+           
+        }
+        .kids .btn{
+            margin-top: 170%;
+            transition: 1s;
+        }
+        .kids:hover .btn{
+            margin-top: 120%;
+            transition: 1s;
+        }
+        .kids:hover{
+            background-image: url("public/image/shp26.jpg.png");
+            background-size: cover;
+        }
+        .btn span:hover{
+            background-color: orange;
+            color: white;
+        }
+        .kidds{
+            width: 110px;
+           height: 100px;
+            background-image: url("public/image/shp23.jpg.png") ;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            overflow: hidden;
+        }
+        .bttn span{
+            font-size: 15px;
+            margin-right: 5px;
+           color: white;
+        }
+        .kidds .bttn{
+            margin-top: 170%;
+            transition: 1s;
+        }
+        .kidds:hover .bttn{
+            margin-top: 40%;
+            transition: 1s;
+        }
+        .bttn span:hover{
+            background-color: rgb(247, 75, 12);
+            color: white;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+    <div>
+        <span class="bi bi-truck" id="truck"> FREE SHIPPING WORLDWIDE</span>
+    </div>
+    <div class="state">
+        <img src="public/image/us.jpg" width="20" height="20" class="us">
+        <select>
+            <option>
+                United State
+            </option>
+            <option>
+                Canada
+            </option>
+            <option>
+                Germany
+            </option>
+        </select>
+        <select>
+            <option>USD</option>
+            <option>EUR</option>
+        </select>
+        <select>
+            <option>
+                English
+            </option>
+            <option>French</option>
+            <option>German</option>
+        </select>
+    </div>
+    <div class="ship">
+        <span>Shipping</span>
+        <span>Faq</span>
+        <span>Contact</span>
+    </div>
+    <div class="icon">
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-instagram"></span>
+        <span class="bi bi-youtube"></span>
+    </div>
+    </header>
+    <nav>
+        <div class="brand-title">
+            <span>shopper.</span>
+        </div>
+        <div class="home">
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </div>
+        <div class="nav-icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person-fill"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </nav>
+    <article>
+        <span class="bi bi-lightning-fill"></span>HAPPY HOLIDAY DEALS ON EVERYTHING <span class="bi bi-lightning-fill"></span>
+     </article>
+    <main>
+        <div>
+            <img src="public/image/shp1.jpg" width="510" height="600">
+            <div class="left">Women</div>
+           <span class="lefts">Shop Women<span class="bi bi-arrow-right"></span></span>
+        </div>
+        <div>
+            <img src="public/image/shp2.jpg" width="510" height="600">
+            <div class="center">Men</div>
+            <span class="centers">Shop men<span class="bi bi-arrow-right"></span></span>
+        </div>
+        <div>
+            <img src="public/image/shp3.jpg" width="500" height="600">
+            <div class="right">Kid</div>
+            <span class="rights">Shop kids<span class="bi bi-arrow-right"></span></span>
+        </div>
+    </main>
+    <section>
+        <div class="card">
+            <div>
+                <span class="bi bi-truck"></span>
+            </div>
+            <div>
+                <div class="card-title">FREE SHIPPING</div>
+                <div class="card-subtitle">From all orders over $100</div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="bi bi-arrow-repeat"></span>
+            </div>
+            <div>
+                <div class="card-title">FREE RETURNS</div>
+                <div class="card-subtitle">Return money within 30 days</div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="bi bi-bag"></span>
+            </div>
+            <div>
+                <div class="card-title">SECURE SHOPPING</div>
+                <div class="card-subtitle">You're in safe hands</div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="bi bi-tag"></span>
+            </div>
+            <div>
+                <div class="card-title">OVER 10,000 STYLES</div>
+                <div class="card-subtitle">We have everything you need</div>
+            </div>
+        </div>
+     
+    </section>
+    <div class="container">
+    <div>
+        <span class="title">NEW COLLECTION</span>
+     </div>
+     &nbsp;
+     <div>
+        <span class="sub-title">Best Picks 2019</span>
+     </div>
+     &nbsp;
+     <div>
+        <span class="text">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,
+             above fly brought Very green.</span>
+     </div>
+     <div class="img-banner">
+        <div>
+        <img src="public/image/shp5.jpg" width="400" height="400" style="margin-right: 10px;" id="bag">
+         </div>
+        <div class="print-banner">
+            
+        <img src="public/image/shp4.jpg.png" width="400" height="400" style="margin-left: 350px;" id="print"> </div>
+     </div>
+     <div class="banner-img">
+        <div class="print-banner">
+        <img src="public/image/shp6.jpg.png" width="400" height="400" style="margin-right: 10px;" id="bag" class="bag">
+        </div>
+        <div>
+        <img src="public/image/shp7.jpg" width="400" height="400" style="margin-left: 350px;" id="print">
+        </div>
+     </div>
+     <div class="title-2">
+        <div class="sub-title-2">
+            <span>Top month Sellers</span>
+        </div>
+        <div class="text-2">
+            <span>Women</span>
+            <span>Men</span>
+            <span>Kids</span>
+        </div>
+     </div>
+     <div class="images">
+        <div> 
+            <div> <img src="public/image/shp8.jpg.png"  height="300" width="250"></div>
+            <div class="image-title">shoes</div>
+            <div class="image-subtitle">Leather mid-heel Sandals</div>
+            <div class="image-text">$129.oo</div>
+        </div>
+        <div>
+        <div class="kids"> 
+            <div class="btn">
+                <span class="bi bi-eye"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </div>
+        </div>
+        <div class="image-title">shoes</div>
+        <div class="image-subtitle">Leather Sneakers</div>
+        <div class="image-text">$85.00</div>
+        </div>
+        <div> 
+            <div> <img src="public/image/shp10.jpg.png"  height="300" width="250"></div>
+            <div class="image-title">shoes</div>
+            <div class="image-subtitle">Leather Sneakers</div>
+            <div class="image-text">$85.00</div>
+        </div>
+        <div> 
+            <div> <img src="public/image/shp11.jpg.png" height="300" width="250"></div>
+            <div class="image-title">Tops</div>
+            <div class="image-subtitle">Cropped cotton Top</div>
+            <div class="image-text">$29.oo</div>
+        </div>
+     </div>
+     <div class="images">
+        <div> 
+            <div> <img src="public/image/shp12.jpg.png"  height="300" width="250"></div>
+            <div class="image-title">Dresses</div>
+            <div class="image-subtitle">Floral print midi Dress</div>
+            <div class="image-text">$50.oo</div>
+        </div>
+        <div> 
+            <div> <img src="public/image/shp13.jpg.png"  height="300" width="250"></div>
+            <div class="image-title">Bags</div>
+            <div class="image-subtitle">Suede cross body Bag</div>
+            <div class="image-text">$49.00</div>
+        </div>
+        <div> 
+            <div> <img src="public/image/shp14.jpg.png"  height="300" width="250"></div>
+            <div class="image-title">skirts</div>
+            <div class="image-subtitle">Printed A-line Skirt</div>
+            <div class="image-text">$79.00</div>
+        </div>
+        <div> 
+            <div> <img src="public/image/shp15.jpg.png" height="300" width="250"></div>
+            <div class="image-title">shoes</div>
+            <div class="image-subtitle">Heel strappy Sandals</div>
+            <div class="image-text">$90.oo</div>
+        </div>
+     </div>
+     <div class="discover">
+       <span> Discover More</span>
+     </div>
+     <div>
+        <img src="public/image/shp16.jpg.png" height="550px" width="1520px" style="margin-top: 70px;">
+     </div>
+     <div class="topic">
+        WHAT BUYERS SAY
+     </div>
+     <div class="topic-text">
+        Latest buyers Reviews
+     </div>
+     <div class="card-container">
+        <div class="cards">
+            <div class="card-header">
+                <div>
+                    <img src="public/image/shp17.jpg" width="70" height="70">
+                </div>
+                <div class="header-text">
+                    <div>
+                        Shoes
+                    </div>
+                    <div>
+                       <b> Low Top Sneakers</b>
+                    </div>
+                    <div>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                From creepeth said moved given devide make multiply of him shall itself also above second doesn't unto
+                 created saying land herb sea midest night where in.
+            </div>
+            <div class="card-footer">
+                Logan Edwards, 01 jun 2019
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-header">
+                <div>
+                    <img src="public/image/shp18.jpg" width="70" height="70">
+                </div>
+                <div class="header-text">
+                    <div>
+                       Dresses
+                    </div>
+                    <div>
+                       <b>Cotton Print Dress</b>
+                    </div>
+                    <div>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                God every fill great replenish darkness unto. very open. likeness their that light. given under image to.
+                subdue of shall cattle day fish from saw spirit and given stars, us you whales may,land,saw fill unto.
+            </div>
+            <div class="card-footer">
+                jane jefferson,29 may 2019
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-header">
+                <div>
+                    <img src="public/image/shp19.jpg" width="70" height="70">
+                </div>
+                <div class="header-text">
+                    <div>
+                        T-shirts
+                    </div>
+                    <div>
+                       <b> Oversizesd print T-shirts</b>
+                    </div>
+                    <div>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill" id="star"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                From creepeth said moved given devide make multiply of him shall itself also above second doesn't unto
+                 created saying land herb sea midest night where in.
+            </div>
+            <div class="card-footer">
+                Logan Edwards, 01 jun 2019
+            </div>
+        </div>
+     </div>
+     <div class="shopper">
+        <div class="shopper-heading">@shopper</div>
+        <div class="shopper-text">Appear, dry there darkness they're seas, dry waters.</div>
+        <div class="shopper-img">
+            <div><img src="public/image/shp20.jpg.png" width="200" height="200"></div>
+           <div> <img src="public/image/shp21.jpg.png"  width="200" height="200"></div>
+           <div> <img src="public/image/shp22.jpg.png"  width="200" height="200"></div>
+         <div class="kidds"> 
+            <div class="bttn">
+               
+                <span class="bi bi-heart"></span>
+                <span>248</span>
+                <span class="bi bi-chat-left"></span>
+                <span>7</span>
+            </div>
+        </div>
+           <div> <img src="public/image/shp24.jpg.png"  width="200" height="200"></div>
+           <div> <img src="public/image/shp25.jpg.png"  width="200" height="200"></div>
+        </div>
+       
+     </div>
+     </div>
+     <div class="shopper-footer">
+        <div class="foter-title">Want style Ideas and Treats?</div>
+        <div class="register-form"><span class="email">Enter Email*</span><span class="button">Subscribe</span></div>
+        <div class="footer">
+        <div class="shp">
+            <div class="name">Shopper</div>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-instagram"></span>
+            <span class="bi bi-youtube"></span>
+
+        </div>
+        <div>
+            <ol>
+                <li>SUPPORT</li>
+                <li>Contact us</li>
+                <li>FAQs</li>
+                <li>Size Guide</li>
+                <li>Shipping & Returns</li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>SHOP</li>
+                <li>Men's Shopping</li>
+                <li>Women's Shopping</li>
+                <li>Kid's Shopping</li>
+                <li>Discount</li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>COMPANY</li>
+                <li>Our Story</li>
+                <li>Careers</li>
+                <li>Terms & Condition</li>
+                <li>Privacy & Cookie Policy</li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>CONTACT</li>
+                <li>1-202-555-0105</li>
+                <li>1-202-555-0106</li>
+                <li>help@shopper.com</li>
+            </ol>
+        </div>
+        </div>
+     <div>
+</body>
+</html>
